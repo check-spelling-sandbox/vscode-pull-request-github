@@ -797,19 +797,19 @@ function parseSuggestedReviewers(
 }
 
 /**
- * Used for case insensitive sort by login
+ * Used for case-insensitive sort by login
  */
 export function loginComparator(a: IAccount, b: IAccount) {
-	// sensitivity: 'accent' allows case insensitive comparison
+	// sensitivity: 'accent' allows case-insensitive comparison
 	return a.login.localeCompare(b.login, 'en', { sensitivity: 'accent' });
 }
 /**
- * Used for case insensitive sort by team name
+ * Used for case-insensitive sort by team name
  */
 export function teamComparator(a: ITeam, b: ITeam) {
 	const aKey = a.name ?? a.slug;
 	const bKey = b.name ?? b.slug;
-	// sensitivity: 'accent' allows case insensitive comparison
+	// sensitivity: 'accent' allows case-insensitive comparison
 	return aKey.localeCompare(bKey, 'en', { sensitivity: 'accent' });
 }
 
@@ -1171,7 +1171,7 @@ export function insertNewCommitsSinceReview(
 ) {
 	if (latestReviewCommitOid && head && head.sha !== latestReviewCommitOid) {
 		let lastViewerReviewIndex: number = timelineEvents.length - 1;
-		let comittedDuringReview: boolean = false;
+		let committedDuringReview: boolean = false;
 		let interReviewCommits: Common.TimelineEvent[] = [];
 
 		for (let i = timelineEvents.length - 1; i > 0; i--) {
@@ -1186,17 +1186,17 @@ export function insertNewCommitsSinceReview(
 				timelineEvents.splice(lastViewerReviewIndex + 1, 0, ...interReviewCommits);
 				break;
 			}
-			else if (comittedDuringReview && timelineEvents[i].event === Common.EventType.Committed) {
+			else if (committedDuringReview && timelineEvents[i].event === Common.EventType.Committed) {
 				interReviewCommits.unshift(timelineEvents[i]);
 				timelineEvents.splice(i, 1);
 			}
 			else if (
-				!comittedDuringReview &&
+				!committedDuringReview &&
 				timelineEvents[i].event === Common.EventType.Reviewed &&
 				(timelineEvents[i] as Common.ReviewEvent).user.login === currentUser
 			) {
 				lastViewerReviewIndex = i;
-				comittedDuringReview = true;
+				committedDuringReview = true;
 			}
 		}
 	}

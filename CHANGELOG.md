@@ -102,7 +102,7 @@
 
 ### Fixes
 
-- Github Enterprise Doesn't Show Comments. https://github.com/microsoft/vscode-pull-request-github/issues/4995
+- GitHub Enterprise Doesn't Show Comments. https://github.com/microsoft/vscode-pull-request-github/issues/4995
 - Buffer is not defined when adding labels. https://github.com/microsoft/vscode-pull-request-github/issues/5009
 
 ## 0.68.0
@@ -165,7 +165,7 @@
 - My vscode workspace sometimes shows a PR from vscode-cpptools. https://github.com/microsoft/vscode-pull-request-github/issues/4842
 - Improper `@mentions` in comments. https://github.com/microsoft/vscode-pull-request-github/issues/4810
 - Duplicated issues in tree. https://github.com/microsoft/vscode-pull-request-github/issues/4781
-- Element with id Local Pull Request Brancheshttps... is already registered. https://github.com/microsoft/vscode-pull-request-github/issues/4642
+- Element with id Local Pull Request Branches https... is already registered. https://github.com/microsoft/vscode-pull-request-github/issues/4642
 
 **_Thank You_**
 
@@ -201,7 +201,7 @@
 
 * [@Balastrong (Leonardo Montini)](https://github.com/Balastrong)
   * Add x button to remove a label from a new PR [PR #4649](https://github.com/microsoft/vscode-pull-request-github/pull/4649)
-  * Change file mode for execute husky hook on MacOS [PR #4695](https://github.com/microsoft/vscode-pull-request-github/pull/4695)
+  * Change file mode for execute husky hook on macOS [PR #4695](https://github.com/microsoft/vscode-pull-request-github/pull/4695)
 * [@eastwood (Clinton Ryan)](https://github.com/eastwood): Gracefully handle errors where the SSH configuration file is corrupt or malformed [PR #4644](https://github.com/microsoft/vscode-pull-request-github/pull/4644)
 * [@kabel (Kevin Abel)](https://github.com/kabel)
   * Fix status checks rendering [PR #4542](https://github.com/microsoft/vscode-pull-request-github/pull/4542)
@@ -282,7 +282,7 @@
 
 - The setting `githubPullRequests.defaultCommentType` controls whether the default comment type is a single comment or a review comment.
 - `"githubPullRequests.postCreate": "checkoutDefaultBranch"` will cause the default branch to be checked out after creating a PR.
-- Section headings (assignees, reviewers, lables, and milestones) are clickable in the PR overview.
+- Section headings (assignees, reviewers, labels, and milestones) are clickable in the PR overview.
 - The commands pr.openModifiedFile pr.openDiffView can be executed with a keyboard shortcut on the active file.
 - GitHub handles in comments are now linkified.
 - Setting `"githubPullRequests.createDraft": true` will make created PRs default to drafts.
@@ -301,7 +301,7 @@
 - JSDoc hover for @return shows GHPRI username hover. https://github.com/microsoft/vscode-pull-request-github/issues/4344
 - Some text is not visible in high contrast mode. https://github.com/microsoft/vscode-pull-request-github/issues/4287
 - Empty diff view after reloading. https://github.com/microsoft/vscode-pull-request-github/issues/4293
-- Error signing in to Github. Try Again doesn't try again. https://github.com/microsoft/vscode-pull-request-github/issues/4148
+- Error signing into GitHub. Try Again doesn't try again. https://github.com/microsoft/vscode-pull-request-github/issues/4148
 - Other accessibility fixes. https://github.com/microsoft/vscode-pull-request-github/issues/4237
 
 **_Thank You_**
@@ -418,7 +418,7 @@
 
 ### Fixes
 
-- Fails to load Pull Requests on older GitHub Enterprise verisons https://github.com/microsoft/vscode-pull-request-github/issues/3829
+- Fails to load Pull Requests on older GitHub Enterprise versions https://github.com/microsoft/vscode-pull-request-github/issues/3829
 - Copy GitHub Permalink in LHS of a PR diff generates a link to the RHS. https://github.com/microsoft/vscode-pull-request-github/issues/3801
 - User and issue suggestions don't always show for some languages. https://github.com/microsoft/vscode-pull-request-github/issues/3874
 - Comment rendering distorted / missing linebreaks. https://github.com/microsoft/vscode-pull-request-github/issues/3776
@@ -454,7 +454,7 @@
 - Use the setting `"githubPullRequests.ignoredPullRequestBranches"` to ignore branches for pull requests.
 - The setting `"githubPullRequests.overrideDefaultBranch"` lets you override the default branch from github.com locally.
 - The "Publish branch?" dialog can be skipped when creating a PR using the setting `"githubPullRequests.pushBranch"`.
-- The auto-merge checkbox is availabe in the "Overview" editor.
+- The auto-merge checkbox is available in the "Overview" editor.
 
 	![Auto-merge in the overview](documentation/changelog/0.46.0/automerge-overview.png)
 
@@ -512,7 +512,7 @@
 ### Fixes
 
 - Invisible Button/Input Text in High Contrast Themes. https://github.com/microsoft/vscode-pull-request-github/issues/3342
-- Create PR icon dissapears from Source Control view. https://github.com/microsoft/vscode-pull-request-github/issues/3410
+- Create PR icon disappears from Source Control view. https://github.com/microsoft/vscode-pull-request-github/issues/3410
 - Don't make potentially expensive getObjectDetails and detectObjectType calls for known file extensions. https://github.com/microsoft/vscode-pull-request-github/issues/3446
 - Web: Broken state for deleting branch in repo that deletes on merge. https://github.com/microsoft/vscode-pull-request-github/issues/3453
 - Can't leave a comment in PR webviewview without a pending review. https://github.com/microsoft/vscode-pull-request-github/issues/3480
@@ -520,7 +520,7 @@
 
 **_Thank You_**
 
-* [@hoontae24](https://github.com/hoontae24): Support the copied permalink for Github Enterprise URL [PR #3460](https://github.com/microsoft/vscode-pull-request-github/pull/3460)
+* [@hoontae24](https://github.com/hoontae24): Support the copied permalink for GitHub Enterprise URL [PR #3460](https://github.com/microsoft/vscode-pull-request-github/pull/3460)
 
 ## 0.40.0
 
@@ -546,7 +546,7 @@
 
 - "We couldn't find an open repository for...". https://github.com/microsoft/vscode-pull-request-github/issues/3242
 - Placeholder title when creating a PR does not behave like GitHub website. https://github.com/microsoft/vscode-pull-request-github/issues/2988
-- Github.dev: Weird Default Description When Creating PR. https://github.com/microsoft/vscode-pull-request-github/issues/3316
+- GitHub.dev: Weird Default Description When Creating PR. https://github.com/microsoft/vscode-pull-request-github/issues/3316
 - New pull requests on branches off master try to merge into a wrong branch. https://github.com/microsoft/vscode-pull-request-github/issues/3303
 
 ## 0.36.2
@@ -617,7 +617,7 @@
 
 ### Fixes
 
-- Every time I open a new instance of vscode I'm being prompted to sign in to GitHub. https://github.com/microsoft/vscode-pull-request-github/issues/3165
+- Every time I open a new instance of vscode I'm being prompted to sign into GitHub. https://github.com/microsoft/vscode-pull-request-github/issues/3165
 - Comments disappearing after exiting review mode. https://github.com/microsoft/vscode-pull-request-github/issues/3173
 
 ## 0.34.0
@@ -654,7 +654,7 @@
 
 ## 0.33.*
 
-- **This is a pre-release version** that uses VS Code's built-in pre-release extension support. The old nightly build (GitHub Pull Requests Nightly) is being deprecated in favor of the this built-in support. Users of the the old nightly build will be automatically upgraded to the new pre-release version; however, extension state will not be migrated. Thank you for helping make GitHub Pull Requests and Issues better!
+- **This is a pre-release version** that uses VS Code's built-in pre-release extension support. The old nightly build (GitHub Pull Requests Nightly) is being deprecated in favor of the this built-in support. Users of the old nightly build will be automatically upgraded to the new pre-release version; however, extension state will not be migrated. Thank you for helping make GitHub Pull Requests and Issues better!
 
 ## 0.32.0
 
@@ -723,7 +723,7 @@
 ![Collapse all comments UI button](documentation/changelog/0.30.0/comments-collapse-all.png)
 - All comments can be expanded and collapsed via the commands **GitHub Pull Requests: Expand All Comments** and **GitHub Pull Requests: Collapse All Comments**.
 - The expand/collapse state of pull request comments can be set with the setting `githubPullRequests.commentExpandState`.
-- Adopted the new multiling string support for settings.
+- Adopted the new multiline string support for settings.
 
 ![Multiline setting](documentation/changelog/0.30.0/multiline-setting.png)
 - Improved the language on the sidebar view to better indicate that you can submit a review.
@@ -856,13 +856,13 @@
   ![Split activity bar views](documentation/changelog/0.24.0/activity_bar_viewlets.png)
 
 - The focused mode view has actions to refresh the view and open the description page.
-  ![Focused mode acions](documentation/changelog/0.24.0/focused_mode_actions.png)
+  ![Focused mode actions](documentation/changelog/0.24.0/focused_mode_actions.png)
 
 - Thanks to @TanushN and @rohanshiva, assignees and the milestone are displayed on the description page.
   ![View assignees and milestone](documentation/changelog/0.24.0/assignees_and_milestone.png)
 
 - Resolved conversations are rendered as collapsed on the description page.
-  ![Resolved conserversations](documentation/changelog/0.24.0/resolved_conversations.png)
+  ![Resolved conversations](documentation/changelog/0.24.0/resolved_conversations.png)
 
 ## 0.23.1
 
@@ -917,7 +917,7 @@
 
 - Clicking on a comment link on the pull request description page now always opens the associated file.
 
-- Thanks to @KaiSforza, the `The remote <remoteName> is not a GitHub repository.` error is now surpressed for remotes outside of those set in `githubPullRequests.remotes`.
+- Thanks to @KaiSforza, the `The remote <remoteName> is not a GitHub repository.` error is now suppressed for remotes outside of those set in `githubPullRequests.remotes`.
 
 ## 0.21.4
 
@@ -1352,7 +1352,7 @@ As part of this release, we have begun adopting GitHub's GraphQL API in some pla
 - Prompt to stage all changes when running the suggest changes with nothing staged [#744](https://github.com/Microsoft/vscode-pull-request-github/pull/744)
 - Add an inline "Open File" action in the "Changes in Pull Request" tree and match styling of git changes [#738](https://github.com/Microsoft/vscode-pull-request-github/pull/738)
 - Display the full file path using the tree item's description, matching other views [#730](https://github.com/Microsoft/vscode-pull-request-github/issues/730)
-- Parse auth callback state parameter on client side instead of mkaing a request to the auth server [#715](https://github.com/Microsoft/vscode-pull-request-github/pull/715)
+- Parse auth callback state parameter on client side instead of making a request to the auth server [#715](https://github.com/Microsoft/vscode-pull-request-github/pull/715)
 - Fix [#735](https://github.com/Microsoft/vscode-pull-request-github/issues/735), ensure correct head parameter is used when creating PR
 - Fix [#727](https://github.com/Microsoft/vscode-pull-request-github/issues/727), make sure review state is always cleared when switching branches
 - Fix [#728](https://github.com/Microsoft/vscode-pull-request-github/issues/738), keep description page data up to date when updating title and description
@@ -1428,7 +1428,7 @@ As part of this release, we have begun adopting GitHub's GraphQL API in some pla
 ## 0.1.5
 
 - Fix for [#449](https://github.com/Microsoft/vscode-pull-request-github/issues/449), authentication blocked when `docs-article-templates` extension is installed
-- Fix for [#429](https://github.com/Microsoft/vscode-pull-request-github/issues/429), avoid unneccessary refreshes of the tree view
+- Fix for [#429](https://github.com/Microsoft/vscode-pull-request-github/issues/429), avoid unnecessary refreshes of the tree view
 
 ## 0.1.4
 
